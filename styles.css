@@ -1,0 +1,164 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #0f0f0f;
+    color: #e0e0e0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    padding: 20px 0;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #4CAF50;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.card, .project-card {
+    background: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    padding: 20px;
+    margin: 20px 0;
+    transform: perspective(1000px) rotateX(0deg);
+    transition: transform 0.5s;
+}
+
+.card:hover, .project-card:hover {
+    transform: perspective(1000px) rotateX(-10deg);
+}
+
+.project-card {
+    background: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin: 20px 0;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+.project-card .project-info {
+    padding: 15px;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #b0b0b0;
+}
+
+/* Estilo da Seção de Contato */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.contact-link img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.contact-link:hover {
+    color: #4CAF50;
+}
+
+.contact-link:hover img {
+    transform: scale(1.1);
+}
+
+.contact-info p {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+
+footer {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.3);
+}
