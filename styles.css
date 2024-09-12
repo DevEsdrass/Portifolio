@@ -117,41 +117,45 @@ section {
 }
 
 /* Estilo da Seção de Contato */
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+/* Estilo da Seção de Contato */
+#contact {
+    text-align: center;
+    margin-top: 50px;
 }
 
 .contact-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #e0e0e0;
+    color: #ffffff;
     font-size: 1.2em;
-    transition: color 0.3s;
+    margin: 15px;
+    transition: color 0.3s ease;
 }
 
 .contact-link img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
-    transition: transform 0.3s;
-}
-
-.contact-link:hover {
-    color: #4CAF50;
+    transition: transform 0.3s ease;
 }
 
 .contact-link:hover img {
     transform: scale(1.1);
 }
 
-.contact-info p {
-    margin-top: 10px;
-    font-size: 1.1em;
+.contact-link:hover {
+    color: #4CAF50; /* Efeito ao passar o mouse, muda a cor do texto */
 }
+
+#contact a {
+    margin: 0 20px;
+}
+
+#contact p {
+    margin-top: 20px;
+}
+
 
 
 footer {
