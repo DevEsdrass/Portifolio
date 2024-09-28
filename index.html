@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Futurista</title>
+    <title>Esdras Jales | Desenvolvedor</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
             <h1>Esdras Jales</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
                     <li><a href="#projects">Projetos</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
@@ -26,19 +27,18 @@
     <!-- Seção Sobre Mim -->
     <section id="about">
         <div class="container">
-            <div class="card">
+            <div class="about-content">
                 <h2>Sobre Mim</h2>
-                <p>Sou um universitário em Ciências da Computação com uma paixão por tecnologia e desenvolvimento.
-                    Apesar de estar em fase de graduação, já adquiri experiência prática significativa em
-                    desenvolvimento de páginas web, jogos e aplicações.</p>
-                <p>Tenho conhecimento em:</p>
-                <ul>
-                    <li><strong>Desenvolvimento de Páginas Web:</strong> Criação de sites modernos e responsivos com
-                        HTML, CSS e JavaScript.</li>
-                    <li><strong>Desenvolvimento de Aplicações:</strong> Construção de aplicações desktop e mobile com
-                        Java.</li>
-                </ul>
-                <p>Estou sempre em busca de novos desafios e oportunidades para aprimorar minhas habilidades.</p>
+                <p>Sou um desenvolvedor apaixonado por tecnologia e inovação, com habilidades em desenvolvimento web, aplicações e jogos. Atualmente, estou cursando Ciências da Computação, mas já possuo experiência prática em projetos profissionais.</p>
+                <div class="skills">
+                    <h3>Minhas Habilidades</h3>
+                    <ul>
+                        <li>Desenvolvimento Web - HTML, CSS, JavaScript, React</li>
+                        <li>Desenvolvimento de Aplicações - Java</li>
+                        <li>Design Responsivo e UX/UI</li>
+                        <li>Trabalho em equipe e resolução de problemas</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -46,26 +46,25 @@
     <!-- Seção Projetos -->
     <section id="projects">
         <div class="container">
-            <h2>Projetos</h2>
-            <div class="project-card">
-                <a href="https://devesdrass.github.io/pagina-clinica2/" target="_blank">
-                    <img src="src/clinica.png" alt="Projeto 1">
-                    <div class="project-info">
-                        <h3>Página de uma Clinica Veterinária</h3>
-                        <p>Foi criada com o intuito de passar todas as informações para os tutores que tivessem o
-                            interesse de conhecer um pouco o local antes de ir até lá.</p>
+            <h2>Projetos Recentes</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="src/Captura de tela 2024-09-28 122151.png" alt="Projeto 1">
+                    <div class="project-details">
+                        <h3>Página Personalizada</h3>
+                        <p>Site personalizado para agregação de link do Whatsapp de forma dinâmica e sútil.</p>
+                        <a href="https://devesdrass.github.io/Whatsapp-Hingridy/" target="_blank">Ver Projeto</a>
                     </div>
-                </a>
-            </div>
-            <div class="project-card">
-                <a href="https://devesdrass.github.io/SupremeAcai/" target="_blank">
+                </div>
+                <div class="project-card">
                     <img src="src/image.png" alt="Projeto 2">
-                    <div class="project-info">
+                    <div class="project-details">
                         <h3>Cardápio Online</h3>
-                        <p>Cardápio de uma açaiteria que consiste em toda as necessidades que o cliente vai precisar
-                            para concluir a compra.</p>
+                        <p>Um cardápio online completo, que facilita a escolha dos produtos para uma açaiteria.</p>
+                        <a href="https://devesdrass.github.io/SupremeAcai/" target="_blank">Ver Projeto</a>
                     </div>
-                </a>
+                </div>
+                <!-- Adicione mais projetos conforme necessário -->
             </div>
         </div>
     </section>
@@ -75,25 +74,27 @@
         <div class="container">
             <h2>Contato</h2>
             <p>Entre em contato comigo através dos seguintes canais:</p>
-            <a href="https://wa.me/5584991847301" target="_blank" class="contact-link">
-                <img src="src/79dc31280371b8ffbe56ec656418e122.png" alt="WhatsApp">
-                <span>WhatsApp</span>
-            </a>
-            <a href="https://instagram.com/esdrasjales" target="_blank" class="contact-link">
-                <img src="src/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" alt="Instagram">
-                <span>Instagram</span>
-            </a>
-            <p>Ou envie um e-mail para: <a href="mailto:esdrasr2011.2@gmail.com">esdrasr2011.2@gmail.com</a></p>
+            <div class="contact-links">
+                <a href="https://wa.me/5584991847301" target="_blank" class="contact-link">
+                    <img src="src/79dc31280371b8ffbe56ec656418e122.png" alt="WhatsApp" width="100px"> WhatsApp
+                </a>
+                <a href="https://instagram.com/esdrasjales" target="_blank" class="contact-link">
+                    <img src="src/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" alt="Instagram" width="100px"> Instagram
+                </a>
+                <p>Email: <a href="mailto:esdrasr2011.2@gmail.com">esdrasr2011.2@gmail.com</a></p>
+            </div>
         </div>
     </section>
 
     <!-- Rodapé -->
     <footer>
         <div class="container">
-            <p>&copy; Esdras Jales. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Esdras Jales. Todos os direitos reservados.</p>
         </div>
     </footer>
 
+    <!-- Botão "Voltar ao Topo" -->
+    <a href="#" id="back-to-top">↑</a>
 </body>
 
 </html>
